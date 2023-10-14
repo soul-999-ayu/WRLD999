@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WRLD999</title>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/favicon.webp" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body id="top" onload="get()">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo" style="color: #fe0164;">WRLD999</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">WRLD999</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <a href="songs.html" class="navbar-link" data-nav-toggler>Juice WRLD - A LEGEND</a>
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <a href="support.html" class="header-action-btn login-btn">
+          <ion-icon name="heart-circle-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Support us</span>
+        </a>
+
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+     <!-- 
+        - #About
+      -->
+
+      <section class="hero" id="about" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/images/hero.png" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle" style="color: #fe0164;">SOUL-999-AYU Presents</p>
+
+            <h2 class="h1 hero-title" style="color: #fe0164;">WRLD999 - <font color="black">A Legend</font></h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+              WRLD999 is a website created to pay tribute to a legend who's gone too soon. This website is created by Ayush, a Computer Science student from Delhi. <br>
+              <br>
+              You can hire Ayush at only &#8377;500/$6 to get your custom Ecommerse or any other website created. 
+              
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+              
+              <a href="https://soul-999-ayu.github.io/Portfolio" target="_blank" class="btn btn-primary">
+                <span class="span">Ayu's Portfolio</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #FAQ
+      -->
+
+      <section class="hero" id="faq" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container" style="grid-template-columns: 1fr 0fr">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle" style="color: #fe0164;">WRLD999's</p>
+
+            <h2 class="h1 hero-title">FAQ</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+              <b>Q1. Why Ayush created this website?</b><br>
+              Ans. Ayush created this website to pay tribute to his last hope, late Jarad Antony Higgins. Mr. Higgings is a legend who saved millions of lives by his pure talent.<br><br>
+              <b>Q2. Can I get my favorite artist's website created?</b><br>
+              Ans. Yes, you can contact Ayush through his social handles and you can get any website created at very cheat price.<br><br>
+              <b>Q3. Can I support Ayush by buying him a coffee?</b><br>
+              Ans. Yes, you can support him or buy him a coffee by paying to this <font color="#fe0164" onclick="javascript:support()">qr code</font>, or his UPI Id: ayush-936@paytm. Contact him for more payment methods if you're not from India.<br>
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+              
+              <a href="#contact" class="btn btn-primary">
+                <span class="span">Contact us</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #Contact
+      -->
+
+      <section class="hero" id="contact" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container" style="grid-template-columns: 1fr 0fr">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">Contact us</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+              <b>You can contact us through our social handles or our mail:</b><br>
+
+              <ul class="footer-list">
+
+                <li class="footer-item">
+                  <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                  <address class="footer-link">
+                    Patel Nagar, New Delhi-08, India
+                  </address>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="send-outline" aria-hidden="true"></ion-icon>
+
+                  <a href="https://t.me/soul_ayu" class="footer-link" target="_blank">@SOUL_AYU</a>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+
+                  <a href="https://instagram.com/soul_ayu" class="footer-link" target="_blank">@SOUL_AYU</a>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                  <a href="mailto:ayushkumar274549@gmail.com" class="footer-link">ayushkumar274549@gmail.com</a>
+                </li>
+
+              </ul>
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script type="text/javascript">
+    function support() {
+    window.open("assets/images/qr.jpg", '_blank').focus();
+  }
+  </script>
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
